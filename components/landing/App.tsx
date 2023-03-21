@@ -2,8 +2,10 @@ import theme from "@/styles/theme";
 import styled from "styled-components";
 import LandingLaptop from "@/public/assets/landing-laptop.svg";
 import Image from "next/image";
+import useDraggable from "@/hooks/useDraggable";
 
 export default function LandingApp() {
+  const { stickerList, trackEnd } = useDraggable();
   return (
     <AppWrapper>
       <AppTitle>Sticky</AppTitle>
