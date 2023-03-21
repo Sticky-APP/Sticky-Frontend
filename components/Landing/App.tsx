@@ -3,32 +3,49 @@ import styled from "styled-components";
 import Image from "next/image";
 import useDraggable from "@/hooks/useDraggable";
 import LandingLaptop from "@/assets/Landing/laptop.svg";
-import { BluePostIt } from "@/assets/PostIt";
+import {
+  BluePostIt,
+  YellowPostIt,
+  YellowWithClipPostIt,
+} from "@/assets/PostIt";
 
 export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
 
   return (
-    <AppWrapper>
-      <CustomDraggableView
-        bounds={undefined}
-        absolute
-        defaultPosition={{ x: 100, y: 100 }}
-      >
-        <ImageWrapper>
-          <Image src={BluePostIt} alt="" fill />
-        </ImageWrapper>
-      </CustomDraggableView>
-      <AppTitle>Sticky</AppTitle>
-      <AppDescription>새로운 디지털 세상, Sticky로 오세요!</AppDescription>
-      <CustomDraggableView bounds={undefined}>
-        <ImageWrapper>
-          <Image src={LandingLaptop} alt="LandingLaptop" fill />
-        </ImageWrapper>
-      </CustomDraggableView>
+    <>
+      <AppWrapper>
+        <AppTitle>Sticky</AppTitle>
+        <AppDescription>새로운 디지털 세상, Sticky로 오세요!</AppDescription>
+        <CustomDraggableView bounds={undefined}>
+          <ImageWrapper>
+            <Image src={LandingLaptop} alt="LandingLaptop" fill />
+          </ImageWrapper>
+        </CustomDraggableView>
 
-      <AppButton>START!</AppButton>
-    </AppWrapper>
+        <AppButton>START!</AppButton>
+      </AppWrapper>
+      <div>
+        <CustomDraggableView
+          bounds={undefined}
+          defaultPosition={{ x: 1200, y: -800 }}
+        >
+          <Image src={BluePostIt} alt="" />
+        </CustomDraggableView>
+        <CustomDraggableView
+          bounds={undefined}
+          defaultPosition={{ x: 1000, y: -400 }}
+        >
+          <Image src={YellowPostIt} alt="" />
+        </CustomDraggableView>
+        <CustomDraggableView
+          bounds={undefined}
+          defaultPosition={{ x: -450, y: -600 }}
+        >
+          <Image src={YellowWithClipPostIt} alt="" />
+        </CustomDraggableView>
+      </div>
+    </>
   );
 }
 

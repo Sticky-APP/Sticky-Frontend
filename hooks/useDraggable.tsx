@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 interface CustomDraggableProps extends Partial<DraggableProps> {
   children: ReactNode;
-  absolute?: boolean;
 }
 
 // TODO : 스티커 내부 텍스트 props 추가
@@ -22,17 +21,11 @@ export default function useDraggable(myStickerList?: Position[]) {
     ]);
   };
 
-  function CustomDraggableView({
-    children,
-    absolute,
-    ...props
-  }: CustomDraggableProps) {
+  function CustomDraggableView({ children, ...props }: CustomDraggableProps) {
     return (
-      <CustomDraggableWrapper absolute={absolute}>
-        <Draggable bounds="parents" {...props}>
-          {children}
-        </Draggable>
-      </CustomDraggableWrapper>
+      <Draggable bounds="parents" {...props}>
+        {children}
+      </Draggable>
     );
   }
 
@@ -42,7 +35,3 @@ export default function useDraggable(myStickerList?: Position[]) {
     CustomDraggableView,
   };
 }
-
-const CustomDraggableWrapper = styled.div<{ absolute?: boolean }>`
-  position: ${(props) => (props.absolute ? "absolute" : "")};
-`;

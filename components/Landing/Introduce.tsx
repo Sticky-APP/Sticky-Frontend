@@ -57,7 +57,7 @@ export default function Introduce() {
 const IntroduceWrapper = styled.div`
   padding: 0 60px;
   background-color: ${theme.secondary};
-  margin-top: 8rem;
+  margin-top: -10rem;
 `;
 
 const Section = styled.div<{ reverse?: boolean }>`
