@@ -1,10 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
-import Landing1 from "@/public/assets/landing-1.svg";
-import Landing2 from "@/public/assets/landing-2.svg";
-import Landing3 from "@/public/assets/landing-3.svg";
 import theme from "@/styles/theme";
 import useDraggable from "@/hooks/useDraggable";
+import { Landing1, Landing2, Landing3 } from "@/assets/Landing";
 
 export default function Introduce() {
   const { CustomDraggableView } = useDraggable();
@@ -20,7 +18,7 @@ export default function Introduce() {
         </div>
         <CustomDraggableView bounds={undefined}>
           <SectionImage>
-            <Image src={Landing1} alt="" fill />
+            <Image src={Landing1} alt="Landing1" fill />
           </SectionImage>
         </CustomDraggableView>
       </Section>
@@ -34,7 +32,7 @@ export default function Introduce() {
         </div>
         <CustomDraggableView bounds={undefined}>
           <SectionImage>
-            <Image src={Landing2} alt="" fill />
+            <Image src={Landing2} alt="Landing2" fill />
           </SectionImage>
         </CustomDraggableView>
       </Section>
@@ -48,7 +46,7 @@ export default function Introduce() {
         </div>
         <CustomDraggableView bounds={undefined}>
           <SectionImage>
-            <Image src={Landing3} alt="" fill />
+            <Image src={Landing3} alt="Landing3" fill />
           </SectionImage>
         </CustomDraggableView>
       </Section>

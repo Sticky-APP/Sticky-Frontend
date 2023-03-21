@@ -1,8 +1,8 @@
 import theme from "@/styles/theme";
 import styled from "styled-components";
-import LandingLaptop from "@/public/assets/landing-laptop.svg";
 import Image from "next/image";
 import useDraggable from "@/hooks/useDraggable";
+import LandingLaptop from "@/assets/Landing/laptop.svg";
 
 export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
@@ -12,7 +12,7 @@ export default function LandingApp() {
       <AppDescription>새로운 디지털 세상, Sticky로 오세요!</AppDescription>
       <CustomDraggableView bounds={undefined}>
         <ImageWrapper>
-          <Image src={LandingLaptop} alt="" fill />
+          <Image src={LandingLaptop} alt="LandingLaptop" fill />
         </ImageWrapper>
       </CustomDraggableView>
       <AppButton>START!</AppButton>
