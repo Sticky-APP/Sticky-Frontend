@@ -59,6 +59,7 @@ const Section = styled.div<{ reverse?: boolean }>`
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
   @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
