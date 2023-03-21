@@ -1,10 +1,3 @@
-const primary = "#662AF1";
-const secondary = "#EBE4FB";
-const background = "#0D1117";
-const green = "#3BB143";
-const white = "#fffff4";
-const black = "#000004";
-
 const red = {
   "50": "#ffebee",
   "100": "#ffcdd2",
@@ -133,13 +126,14 @@ const gray = {
 };
 
 export default {
-  primary,
-  secondary,
-  background,
+  primary: "#662AF1",
+  secondary: "#EBE4FB",
+  white: "#fffff4",
+  black: "#000004",
+  green: "#3BB143",
   red,
   orange,
   yellow,
-  green,
   blue,
   skyblue,
   teal,
@@ -147,6 +141,4 @@ export default {
   purple,
   indigo,
   gray,
-  white,
-  black,
 };
