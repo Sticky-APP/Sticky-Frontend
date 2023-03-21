@@ -20,10 +20,7 @@ export default function Introduce() {
           <Image src={Landing1} alt="" fill />
         </SectionImage>
       </Section>
-      <Section>
-        <SectionImage>
-          <Image src={Landing2} alt="" fill />
-        </SectionImage>
+      <Section reverse>
         <div>
           <SectionTitle>무엇이든!</SectionTitle>
           <SectionDescription>
@@ -31,6 +28,9 @@ export default function Introduce() {
             무엇이든 할 수있어요!
           </SectionDescription>
         </div>
+        <SectionImage>
+          <Image src={Landing2} alt="" fill />
+        </SectionImage>
       </Section>
       <Section>
         <div>
@@ -54,8 +54,9 @@ const IntroduceWrapper = styled.div`
   margin-top: 8rem;
 `;
 
-const Section = styled.div`
+const Section = styled.div<{ reverse?: boolean }>`
   display: flex;
+  flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   justify-content: space-between;
   align-items: center;
   @media screen and (max-width: 1024px) {
