@@ -18,4 +18,6 @@ export default function LandingPage(props: FrameProps) {
   return <Frame {...props} />;
 }
 
-const LandingPageLayout = styled.div``;
+const LandingPageLayout = styled.div`
+  overflow-x: hidden;
+`;
