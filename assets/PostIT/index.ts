@@ -1,3 +1,3 @@
-export { default as Blue } from "./Blue.svg";
-export { default as Yellow } from "./Yellow.svg";
-export { default as YellowWithClip } from "./YellowWithClip.svg";
+export { default as BluePostIt } from "./Blue.svg";
+export { default as YellowPostIt } from "./Yellow.svg";
+export { default as YellowWithClipPostIt } from "./YellowWithClip.svg";
