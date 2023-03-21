@@ -25,7 +25,8 @@ const AppWrapper = styled.div`
 
 const ImageWrapper = styled.div`
   position: relative;
-  width: 900px;
+  max-width: 900px;
+  width: 90vw;
   height: 600px;
 `;
 

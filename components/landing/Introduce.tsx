@@ -74,7 +74,8 @@ const SectionTitle = styled.h2`
 
 const SectionImage = styled.div`
   position: relative;
-  width: 600px;
+  max-width: 600px;
+  width: 90vw;
   height: 600px;
 `;
 
