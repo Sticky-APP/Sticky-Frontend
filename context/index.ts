@@ -4,5 +4,3 @@ export const textState = atom({
   key: "textState",
   default: "yarn",
 });
-
-export default {};
