@@ -9,6 +9,6 @@ function Frame({ app }: FrameProps) {
   return <LandingPageLayout>{app}</LandingPageLayout>;
 }
 
-export default function LandingPage({ app }: FrameProps) {
-  return <Frame app={app} />;
+export default function LandingPage(props: FrameProps) {
+  return <Frame {...props} />;
 }
