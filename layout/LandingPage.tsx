@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { LandingPageLayout } from "./LandingPage.style";
+import styled from "styled-components";
 
 interface FrameProps {
   app: ReactNode;
@@ -12,3 +12,5 @@ function Frame({ app }: FrameProps) {
 export default function LandingPage(props: FrameProps) {
   return <Frame {...props} />;
 }
+
+const LandingPageLayout = styled.div``;
