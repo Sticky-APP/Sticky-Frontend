@@ -7,7 +7,7 @@ import {
   BluePostIt,
   YellowPostIt,
   YellowWithClipPostIt,
-} from "@/assets/PostIt";
+} from "@/assets/PostIT";
 
 export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
