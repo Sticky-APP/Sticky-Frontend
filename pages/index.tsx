@@ -1,6 +1,7 @@
-import Landing from "@/components/landing";
+import LandingApp from "@/components/landing/App";
+import Introduce from "@/components/landing/Introduce";
 import LandingPage from "@/layout/LandingPage";
 
 export default function Main() {
-  return <LandingPage app={<Landing />} />;
+  return <LandingPage app={<LandingApp />} introduce={<Introduce />} />;
 }
