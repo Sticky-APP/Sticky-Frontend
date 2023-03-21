@@ -4,8 +4,10 @@ import Landing1 from "@/public/assets/landing-1.svg";
 import Landing2 from "@/public/assets/landing-2.svg";
 import Landing3 from "@/public/assets/landing-3.svg";
 import theme from "@/styles/theme";
+import useDraggable from "@/hooks/useDraggable";
 
 export default function Introduce() {
+  const { CustomDraggableView } = useDraggable();
   return (
     <IntroduceWrapper>
       <Section>
@@ -16,9 +18,11 @@ export default function Introduce() {
             소통할수 있어요!
           </SectionDescription>
         </div>
-        <SectionImage>
-          <Image src={Landing1} alt="" fill />
-        </SectionImage>
+        <CustomDraggableView bounds={undefined}>
+          <SectionImage>
+            <Image src={Landing1} alt="" fill />
+          </SectionImage>
+        </CustomDraggableView>
       </Section>
       <Section reverse>
         <div>
@@ -28,9 +32,11 @@ export default function Introduce() {
             무엇이든 할 수있어요!
           </SectionDescription>
         </div>
-        <SectionImage>
-          <Image src={Landing2} alt="" fill />
-        </SectionImage>
+        <CustomDraggableView bounds={undefined}>
+          <SectionImage>
+            <Image src={Landing2} alt="" fill />
+          </SectionImage>
+        </CustomDraggableView>
       </Section>
       <Section>
         <div>
@@ -40,9 +46,11 @@ export default function Introduce() {
             새로운 친구를 사귀는건 언제나 즐거우니까요~!
           </SectionDescription>
         </div>
-        <SectionImage>
-          <Image src={Landing3} alt="" fill />
-        </SectionImage>
+        <CustomDraggableView bounds={undefined}>
+          <SectionImage>
+            <Image src={Landing3} alt="" fill />
+          </SectionImage>
+        </CustomDraggableView>
       </Section>
     </IntroduceWrapper>
   );

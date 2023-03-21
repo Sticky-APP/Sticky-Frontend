@@ -5,15 +5,16 @@ import Image from "next/image";
 import useDraggable from "@/hooks/useDraggable";
 
 export default function LandingApp() {
-  const { stickerList, trackEnd } = useDraggable();
+  const { CustomDraggableView } = useDraggable();
   return (
     <AppWrapper>
       <AppTitle>Sticky</AppTitle>
       <AppDescription>새로운 디지털 세상, Sticky로 오세요!</AppDescription>
-      <ImageWrapper>
-        <Image src={LandingLaptop} alt="" fill />
-      </ImageWrapper>
-
+      <CustomDraggableView>
+        <ImageWrapper>
+          <Image src={LandingLaptop} alt="" fill />
+        </ImageWrapper>
+      </CustomDraggableView>
       <AppButton>START!</AppButton>
     </AppWrapper>
   );
@@ -30,6 +31,7 @@ const ImageWrapper = styled.div`
   max-width: 900px;
   width: 90vw;
   height: 600px;
+  user-select: none;
 `;
 
 const AppTitle = styled.h1`
