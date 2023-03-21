@@ -1,5 +1,5 @@
-import LandingApp from "@/components/landing/App";
-import Introduce from "@/components/landing/Introduce";
+import LandingApp from "@/components/Landing/App";
+import Introduce from "@/components/Landing/Introduce";
 import LandingPage from "@/layout/LandingPage";
 
 export default function Main() {
