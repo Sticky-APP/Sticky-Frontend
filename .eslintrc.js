@@ -38,5 +38,6 @@ module.exports = {
     ],
     "react/no-array-index-key": 0,
     "consistent-return": 0,
+    "import/prefer-default-export": "off",
   },
 };
