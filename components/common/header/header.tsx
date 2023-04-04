@@ -45,7 +45,6 @@ const ProfileImage = styled(Image)`
 `;
 
 const ProfileName = styled.span`
-  font-family: "Noto Sans KR";
   font-weight: 700;
   font-size: 14px;
   color: #000000;

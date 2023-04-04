@@ -59,7 +59,6 @@ const CurrentSticky = styled.p`
     border-radius: 50%;
   }
   height: 38px;
-  font-family: "Noto Sans KR";
   font-weight: 500;
   font-size: 26px;
   color: #000000;

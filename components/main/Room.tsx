@@ -14,14 +14,12 @@ export default function Room({ name, intro, state }: PropsType) {
 }
 
 const RoomIntroduce = styled.p`
-  font-family: "Noto Sans KR";
   font-weight: 500;
   font-size: 14px;
   margin-top: 8px;
 `;
 
 const RoomOwner = styled.p`
-  font-family: "Noto Sans KR";
   font-weight: 700;
   font-size: 15px;
 `;
@@ -29,7 +27,6 @@ const RoomOwner = styled.p`
 const RoomState = styled.p`
   position: absolute;
   right: 72px;
-  font-family: "Noto Sans KR";
   font-weight: 500;
   font-size: 12px;
   color: #662af1;
