@@ -2,7 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import theme from "@/styles/theme";
 import useDraggable from "@/hooks/useDraggable";
-import { Landing1, Landing2, Landing3 } from "@/assets/Landing";
+import { Landing1, Landing2, Landing3 } from "@/assets";
 
 export default function Introduce() {
   const { CustomDraggableView } = useDraggable();
@@ -16,7 +16,7 @@ export default function Introduce() {
             소통할수 있어요!
           </SectionDescription>
         </div>
-        <CustomDraggableView bounds={undefined}>
+        <CustomDraggableView>
           <SectionImage>
             <Image src={Landing1} alt="Landing1" fill />
           </SectionImage>
@@ -30,7 +30,7 @@ export default function Introduce() {
             무엇이든 할 수있어요!
           </SectionDescription>
         </div>
-        <CustomDraggableView bounds={undefined}>
+        <CustomDraggableView>
           <SectionImage>
             <Image src={Landing2} alt="Landing2" fill />
           </SectionImage>
@@ -44,7 +44,7 @@ export default function Introduce() {
             새로운 친구를 사귀는건 언제나 즐거우니까요~!
           </SectionDescription>
         </div>
-        <CustomDraggableView bounds={undefined}>
+        <CustomDraggableView>
           <SectionImage>
             <Image src={Landing3} alt="Landing3" fill />
           </SectionImage>
