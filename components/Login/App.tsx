@@ -13,25 +13,29 @@ export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
 
   return (
-    <LoginWrapper>
-      <LoginButtonWrapper>
-        <LoginTitle>Sticky</LoginTitle>
-        <LoginDescription>새로운 디지털 세상, Sticky 시작하기</LoginDescription>
-        <LoginButton>
-          <Image src={GoogleIcon} alt="" />
-          Google로 로그인
-        </LoginButton>
-      </LoginButtonWrapper>
-      <CustomDraggableView defaultPosition={{ x: -300, y: 0 }}>
+    <>
+      <LoginWrapper>
+        <LoginButtonWrapper>
+          <LoginTitle>Sticky</LoginTitle>
+          <LoginDescription>
+            새로운 디지털 세상, Sticky 시작하기
+          </LoginDescription>
+          <LoginButton>
+            <Image src={GoogleIcon} alt="" />
+            Google로 로그인
+          </LoginButton>
+        </LoginButtonWrapper>
+      </LoginWrapper>
+      <CustomDraggableView defaultPosition={{ x: 200, y: -800 }}>
         <Image src={BluePostIt} alt="" />
       </CustomDraggableView>
-      <CustomDraggableView defaultPosition={{ x: 500, y: -200 }}>
+      <CustomDraggableView defaultPosition={{ x: 1000, y: -700 }}>
         <Image src={YellowPostIt} alt="" />
       </CustomDraggableView>
-      <CustomDraggableView defaultPosition={{ x: 300, y: 200 }}>
+      <CustomDraggableView defaultPosition={{ x: -500, y: -400 }}>
         <Image src={YellowWithClipPostIt} alt="" />
       </CustomDraggableView>
-    </LoginWrapper>
+    </>
   );
 }
 
@@ -64,6 +68,7 @@ const LoginDescription = styled.span`
 
 const LoginButton = styled.button`
   color: ${theme.gray["500"]};
+  margin-top: 4rem;
   background-color: ${theme.white};
   font-size: 26px;
   padding: 0.75rem 3.5rem;
