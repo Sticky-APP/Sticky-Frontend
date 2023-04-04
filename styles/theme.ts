@@ -120,7 +120,7 @@ const gray = {
   "200": "#dbdbdb",
   "300": "#b5b5b5",
   "400": "#707070",
-  "500": "#494949",
+  "500": "#4B4B4B",
   "600": "#262626",
   "700": "#000000",
 };
@@ -128,7 +128,7 @@ const gray = {
 export default {
   primary: "#662AF1",
   secondary: "#EBE4FB",
-  white: "#fffff4",
+  white: "#ffffff",
   black: "#000004",
   green: "#3BB143",
   red,
