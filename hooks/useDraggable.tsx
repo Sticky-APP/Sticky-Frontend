@@ -1,7 +1,6 @@
 import { Position } from "@/types/draggable.interface";
 import { ReactNode, useState } from "react";
 import Draggable, { DraggableData, DraggableProps } from "react-draggable";
-import styled from "styled-components";
 
 interface CustomDraggableProps extends Partial<DraggableProps> {
   children: ReactNode;
@@ -22,11 +21,7 @@ export default function useDraggable(myStickerList?: Position[]) {
   };
 
   function CustomDraggableView({ children, ...props }: CustomDraggableProps) {
-    return (
-      <Draggable bounds="parents" {...props}>
-        {children}
-      </Draggable>
-    );
+    return <Draggable {...props}>{children}</Draggable>;
   }
 
   return {
