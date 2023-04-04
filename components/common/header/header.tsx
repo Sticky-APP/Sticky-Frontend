@@ -38,8 +38,8 @@ const HeaderContainer = styled.div`
 `;
 
 const ProfileImage = styled(Image)`
-  width: 52px
-  height: 52px
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   position: relative;
 `;
