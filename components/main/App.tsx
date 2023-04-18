@@ -29,7 +29,7 @@ const testData = [
   },
 ];
 
-export default function RoomList() {
+export default function RoomListApp() {
   return (
     <RoomListContainer>
       <CurrentSticky>최근에 올라온 Sticky</CurrentSticky>

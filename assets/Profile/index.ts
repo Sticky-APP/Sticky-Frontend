@@ -1,1 +1,0 @@
-export { default as ProfileTest } from './ProfileTest.svg';
