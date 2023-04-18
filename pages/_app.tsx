@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "@/styles/theme";
 import GlobalStyle from "@/styles/globalStyle";
 import UserStyle from "@/styles/userStyle";
+import Modal from "@/components/common/Modal";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <GlobalStyle />
         <UserStyle />
         <Component {...pageProps} />
+        <Modal />
       </ThemeProvider>
     </RecoilRoot>
   );
