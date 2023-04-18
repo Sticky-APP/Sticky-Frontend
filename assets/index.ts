@@ -9,5 +9,14 @@ export { default as Laptop } from "./Landing/laptop.svg";
 
 export { default as ProfileTest } from "./Profile/ProfileTest.svg";
 
-export { default as GoogleIcon } from "./icons/GoogleIcon.svg";
-export { default as BackIcon } from "./icons/back.svg";
+export { default as GoogleIcon } from "./Icons/GoogleIcon.svg";
+export { default as BackIcon } from "./Icons/back.svg";
+export { default as Bed } from "./Icons/Bed.svg";
+export { default as Clock } from "./Icons/Clock.svg";
+export { default as Moon } from "./Icons/Moon.svg";
+export { default as Shelf } from "./Icons/Shelf.svg";
+export { default as Sofa } from "./Icons/Sofa.svg";
+export { default as Stand } from "./Icons/Stand.svg";
+export { default as Table } from "./Icons/Table.svg";
+export { default as WaterPurifier } from "./Icons/WaterPurifier.svg";
+export { default as WhiteBoard } from "./Icons/WhiteBoard.svg";
