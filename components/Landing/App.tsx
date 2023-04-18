@@ -4,9 +4,11 @@ import Image from "next/image";
 import useDraggable from "@/hooks/useDraggable";
 import LandingLaptop from "@/assets/Landing/laptop.svg";
 import { BluePostIt, YellowPostIt, YellowWithClipPostIt } from "@/assets";
+import useModal from "@/hooks/useModal";
 
 export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
+  const { openModal } = useModal();
 
   return (
     <>
@@ -19,7 +21,15 @@ export default function LandingApp() {
           </ImageWrapper>
         </CustomDraggableView>
 
-        <AppButton>START!</AppButton>
+        <AppButton
+          onClick={() => {
+            openModal({
+              content: "모달입니다",
+            });
+          }}
+        >
+          START!
+        </AppButton>
       </AppWrapper>
       <div>
         <CustomDraggableView defaultPosition={{ x: 100, y: -800 }}>
