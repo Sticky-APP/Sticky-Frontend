@@ -4,9 +4,11 @@ import Image from "next/image";
 import useDraggable from "@/hooks/useDraggable";
 import LandingLaptop from "@/assets/Landing/laptop.svg";
 import { BluePostIt, YellowPostIt, YellowWithClipPostIt } from "@/assets";
+import { useRouter } from "next/router";
 
 export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
+  const router = useRouter();
 
   return (
     <>
@@ -19,7 +21,7 @@ export default function LandingApp() {
           </ImageWrapper>
         </CustomDraggableView>
 
-        <AppButton>START!</AppButton>
+        <AppButton onClick={() => router.push("/login")}>START!</AppButton>
       </AppWrapper>
       <div>
         <CustomDraggableView defaultPosition={{ x: 100, y: -800 }}>

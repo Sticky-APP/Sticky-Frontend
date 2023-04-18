@@ -4,12 +4,13 @@ import styled from "styled-components";
 interface FrameProps {
   app: ReactNode;
   introduce: ReactNode;
+  footer: ReactNode;
 }
 
-function Frame({ app, introduce }: FrameProps) {
+function Frame({ app, introduce, footer }: FrameProps) {
   return (
     <LandingPageLayout>
-      {app} {introduce}
+      {app} {introduce} {footer}
     </LandingPageLayout>
   );
 }
