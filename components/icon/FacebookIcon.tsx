@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FacebookLogo({ color }: { color: string }) {
+export default function FacebookLogo({ color }: { color?: string }) {
   return (
     <svg
       width="40"
@@ -12,7 +12,7 @@ export default function FacebookLogo({ color }: { color: string }) {
     >
       <path
         d="M20.8 16V13.6C20.8 12.56 21.04 12 22.72 12H24.8V8H21.6C17.6 8 16 10.64 16 13.6V16H12.8V20H16V32H20.8V20H24.32L24.8 16H20.8Z"
-        fill="white"
+        fill="#662AF1"
         fillOpacity="1"
       />
     </svg>

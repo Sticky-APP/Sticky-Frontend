@@ -19,13 +19,13 @@ export default function Footer() {
       </div>
       <div className="flex gap-1">
         <FooterLogo>
-          <FacebookLogo color="#DBDBDB" />
+          <FacebookLogo />
         </FooterLogo>
         <FooterLogo>
-          <EmailLogo color="#ffffff" />
+          <EmailLogo />
         </FooterLogo>
         <FooterLogo>
-          <LinkedInLogo color="#DBDBDB" />
+          <LinkedInLogo />
         </FooterLogo>
       </div>
     </div>
@@ -33,7 +33,7 @@ export default function Footer() {
 }
 
 export const FooterLogo = styled.div`
-  background-color: #ccc;
+  background-color: #ebe4fb;
   transition: all 0.3s;
   &:nth-child(1):hover {
     background-color: #1877f2;
