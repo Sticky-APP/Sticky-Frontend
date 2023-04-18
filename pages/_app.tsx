@@ -6,6 +6,7 @@ import theme from "@/styles/theme";
 import GlobalStyle from "@/styles/globalStyle";
 import UserStyle from "@/styles/userStyle";
 import Modal from "@/components/common/Modal";
+import "@/styles/global.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
