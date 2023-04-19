@@ -10,7 +10,7 @@ export { default as Laptop } from "./Landing/laptop.svg";
 export { default as ProfileTest } from "./Profile/ProfileTest.svg";
 
 export { default as GoogleIcon } from "./Icons/GoogleIcon.svg";
-export { default as BackIcon } from "./Icons/back.svg";
+export { default as BackIcon } from "./Icons/Back.svg";
 export { default as Bed } from "./Icons/Bed.svg";
 export { default as Clock } from "./Icons/Clock.svg";
 export { default as Moon } from "./Icons/Moon.svg";
