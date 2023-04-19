@@ -6,14 +6,14 @@ interface FrameProps {
 }
 
 function Frame({ app }: FrameProps) {
-  return <SpacePageLayout>{app}</SpacePageLayout>;
+  return <MyPageLayout>{app}</MyPageLayout>;
 }
 
-export default function SpacePage(props: FrameProps) {
+export default function MyPage(props: FrameProps) {
   return <Frame {...props} />;
 }
 
-const SpacePageLayout = styled.div`
+const MyPageLayout = styled.div`
   overflow-x: hidden;
-  margin: 50px 10rem 0 10rem;
+  margin: 50px 10rem 50px 10rem;
 `;

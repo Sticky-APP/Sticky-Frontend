@@ -21,3 +21,5 @@ export { default as Table } from "./Icons/Table.svg";
 export { default as WaterPurifier } from "./Icons/WaterPurifier.svg";
 export { default as WhiteBoard } from "./Icons/WhiteBoard.svg";
 export { default as Room } from "./Icons/Room.svg";
+export { default as Pencil } from "./Icons/Pencil.svg";
+export { default as FullScreen } from "./Icons/FullScreen.svg";
