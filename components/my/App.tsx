@@ -1,5 +1,6 @@
-import { ProfileTest, Pencil } from "@/assets";
+import { ProfileTest, Pencil, FullScreen } from "@/assets";
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
 export default function MyApp() {
@@ -24,18 +25,39 @@ export default function MyApp() {
           <Image fill src={Pencil} alt="Pencil" />
         </PencilImageStyle>
       </IntroduceContainer>
-      <IframeStyle
-        sandbox="allow-scripts allow-popups"
-        src="http://localhost:3000/space"
-        title="my-space"
-      />
+      <IframeContainer>
+        <IframeStyle
+          sandbox="allow-scripts allow-popups"
+          src="http://localhost:3000/space"
+          title="my-space"
+        />
+        <FullScreenImageStyle href="/space">
+          <Image src={FullScreen} alt="icon" />
+        </FullScreenImageStyle>
+      </IframeContainer>
     </>
   );
 }
 
+const FullScreenImageStyle = styled(Link)`
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+`;
+
+const IframeContainer = styled.div`
+  width: 100%;
+  height: 80vh;
+  margin-top: 15px;
+  overflow: hidden;
+  position: relative;
+`;
+
 const IframeStyle = styled.iframe`
   width: 100%;
-  height: 700px;
+  height: 100%;
   border: none;
 `;
 
