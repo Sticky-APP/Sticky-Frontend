@@ -61,15 +61,13 @@ export default function Header() {
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 123px;
   width: 100%;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem 0;
 `;
 
 const ImageContainer = styled.div`
   cursor: pointer;
-  width: 150px;
-  height: 123px;
   background: #ffffff;
   box-shadow: -1px -6px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -79,4 +77,5 @@ const ImageContainer = styled.div`
 
 const ItemContainer = styled.div`
   display: flex;
+  align-items: center;
 `;
