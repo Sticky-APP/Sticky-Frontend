@@ -101,14 +101,13 @@ const HeaderContainer = styled.div`
   }
   width: 100%;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem 0;
 `;
 
 const ImageContainer = styled(Link)`
   position: fixed;
   z-index: 2;
   cursor: pointer;
-  width: 150px;
-  height: 123px;
   background: #ffffff;
   box-shadow: -1px -6px 4px rgba(0, 0, 0, 0.25);
   display: flex;

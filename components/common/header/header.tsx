@@ -32,7 +32,6 @@ const HeaderContainer = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 123px;
   position: relative;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
 `;
