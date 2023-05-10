@@ -15,5 +15,5 @@ export default function SpacePage(props: FrameProps) {
 
 const SpacePageLayout = styled.div`
   overflow-x: hidden;
-  margin: 50px 10rem 0 10rem;
+  margin: 6rem 10rem 0 10rem;
 `;

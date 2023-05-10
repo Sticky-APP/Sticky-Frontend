@@ -2,6 +2,7 @@ import { BackIcon } from "@/assets";
 import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
 import * as Icons from "@/assets/";
+import Link from "next/link";
 import Item from "./Item";
 
 const testData = [
@@ -41,13 +42,45 @@ const testData = [
     id: 9,
     src: Icons.Moon,
   },
+  {
+    id: 10,
+    src: Icons.Moon,
+  },
+  {
+    id: 11,
+    src: Icons.Moon,
+  },
+  {
+    id: 12,
+    src: Icons.Moon,
+  },
+  {
+    id: 13,
+    src: Icons.Moon,
+  },
+  {
+    id: 14,
+    src: Icons.Moon,
+  },
+  {
+    id: 15,
+    src: Icons.Moon,
+  },
+  {
+    id: 16,
+    src: Icons.Moon,
+  },
+  {
+    id: 17,
+    src: Icons.Moon,
+  },
 ];
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <ImageContainer>
-        <Image src={BackIcon} width={130} height={80} alt="icon" />
+      <ImageContainer href="/main">
+        <Image src={BackIcon} width={110} height={80} alt="icon" />
       </ImageContainer>
       <ItemContainer>
         {testData.map((value: { id: number; src: StaticImageData }) => {
@@ -62,11 +95,17 @@ const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   height: 123px;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   width: 100%;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
 `;
 
-const ImageContainer = styled.div`
+const ImageContainer = styled(Link)`
+  position: fixed;
+  z-index: 2;
   cursor: pointer;
   width: 150px;
   height: 123px;
@@ -79,4 +118,5 @@ const ImageContainer = styled.div`
 
 const ItemContainer = styled.div`
   display: flex;
+  align-items: center;
 `;
