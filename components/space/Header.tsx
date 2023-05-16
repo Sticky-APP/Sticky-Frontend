@@ -47,7 +47,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <ImageContainer>
-        <Image src={BackIcon} width={130} height={80} alt="icon" />
+        <Image fill src={BackIcon} alt="icon" />
       </ImageContainer>
       <ItemContainer>
         {testData.map((value: { id: number; src: StaticImageData }) => {
@@ -61,6 +61,7 @@ export default function Header() {
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
+  position: relative;
   width: 100%;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
   padding: 1rem 0;
@@ -73,9 +74,13 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 130px;
+  height: 80px;
 `;
 
 const ItemContainer = styled.div`
   display: flex;
   align-items: center;
+  padding-left: 130px;
 `;
