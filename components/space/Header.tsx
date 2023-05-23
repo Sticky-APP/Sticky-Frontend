@@ -96,13 +96,12 @@ const HeaderContainer = styled.div`
   align-items: center;
   position: relative;
   height: 123px;
-  overflow-x: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
   width: 100%;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
   padding: 1rem 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const ImageContainer = styled(Link)`
@@ -123,4 +122,5 @@ const ItemContainer = styled.div`
   display: flex;
   align-items: center;
   padding-left: 130px;
+  z-index: 9999999999;
 `;
