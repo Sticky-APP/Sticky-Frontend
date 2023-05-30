@@ -18,7 +18,6 @@ const ItemContainer = styled.div`
   width: 120px;
   height: 100%;
   margin-left: 30px;
-  z-index: 999;
 `;
 
 const Test = styled(Image)`
