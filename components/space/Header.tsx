@@ -105,12 +105,13 @@ export default function Header() {
       <ImageContainer href="/main">
         <Image fill src={BackIcon} alt="icon" />
       </ImageContainer>
-      <Line />
+      <Line line={130} />
       <ItemContainer>
         {testData[page].map((value: { id: number; src: StaticImageData }) => {
           return <Item key={value.id} item={value.src} />;
         })}
       </ItemContainer>
+      <Line line={1670} />
       <ButtonContainer>
         <ArrowButton
           type="button"
@@ -136,7 +137,7 @@ const Line = styled.li`
   height: 123px;
   background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
-  left: 140px;
+  left: ${({ line }: { line: number }) => `${line}px`};
   list-style: none;
 `;
 
