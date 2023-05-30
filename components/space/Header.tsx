@@ -101,19 +101,21 @@ export default function Header() {
   }, [page]);
 
   return (
-    <HeaderContainer>
-      <ImageContainer href="/main">
-        <Image fill src={BackIcon} alt="icon" />
-      </ImageContainer>
-      <Line line={130} />
-      <ItemContainer>
-        {testData[page].map((value: { id: number; src: StaticImageData }) => {
-          return <Item key={value.id} item={value.src} />;
-        })}
-      </ItemContainer>
-      <Line line={1670} />
+    <>
+      <HeaderContainer>
+        <ImageContainer href="/main">
+          <Image fill src={BackIcon} alt="icon" />
+        </ImageContainer>
+        <Line />
+        <ItemContainer>
+          {testData[page].map((value: { id: number; src: StaticImageData }) => {
+            return <Item key={value.id} item={value.src} />;
+          })}
+        </ItemContainer>
+      </HeaderContainer>
       <ButtonContainer>
         <ArrowButton
+          disable={front}
           type="button"
           onClick={() => setPage((prev) => prev - 1)}
           disabled={front}
@@ -121,6 +123,7 @@ export default function Header() {
           <IoIosArrowBack size={30} />
         </ArrowButton>
         <ArrowButton
+          disable={back}
           type="button"
           onClick={() => setPage((prev) => prev + 1)}
           disabled={back}
@@ -128,7 +131,7 @@ export default function Header() {
           <IoIosArrowForward size={30} />
         </ArrowButton>
       </ButtonContainer>
-    </HeaderContainer>
+    </>
   );
 }
 
@@ -137,7 +140,7 @@ const Line = styled.li`
   height: 123px;
   background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
-  left: ${({ line }: { line: number }) => `${line}px`};
+  left: 130px;
   list-style: none;
 `;
 
@@ -169,19 +172,21 @@ const ButtonContainer = styled.div`
   width: 100px;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 50px;
   position: absolute;
   right: 100px;
+  border: 1px solid black;
 `;
 
 const ArrowButton = styled.button`
   width: 50px;
-  height: 50px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
   &:hover {
     background-color: lightgray;
   }
+  background-color: ${({ disable }: { disable: boolean }) =>
+    disable ? "gray" : "transparent"};
 `;
