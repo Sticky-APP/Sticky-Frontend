@@ -18,6 +18,5 @@ const SpacePageLayout = styled.div`
   width: 1000px;
   height: 1200px;
   overflow-x: hidden;
-  margin: 6rem 10rem 0 10rem;
-  z-index: -99999;
+  margin: 10rem auto;
 `;
