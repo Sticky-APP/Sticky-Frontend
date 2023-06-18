@@ -1,4 +1,4 @@
-const landingStickerLit = [
+const landingStickerList = [
   { id: 0, x: 0, y: 0 },
   { id: 1, x: 100, y: 100 },
   { id: 2, x: 200, y: 200 },
@@ -9,6 +9,6 @@ const landingStickerLit = [
   { id: 9, x: 1120, y: 213 },
 ];
 
-const fixture = { landingStickerLit };
+const fixture = { landingStickerList };
 
 export default fixture;
