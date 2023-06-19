@@ -12,7 +12,7 @@ export default function LandingApp() {
   const router = useRouter();
 
   const handleStart = () => {
-    router.push(Storage.getItem("token") ? "/space" : "/login");
+    router.push(Storage.getItem("token") ? "/main" : "/login");
   };
 
   return (
