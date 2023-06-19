@@ -1,9 +1,11 @@
 import { PropsType } from "@/types/mainProps.interface";
+import { useRouter } from "next/router";
 import styled from "styled-components";
 
 export default function Room({ name, intro, state }: PropsType) {
+  const router = useRouter();
   return (
-    <RoomContainer>
+    <RoomContainer onClick={() => router.push("/my")}>
       <RoomInfo>
         <RoomOwner>{name}님의 방</RoomOwner>
         <RoomIntroduce>{intro}</RoomIntroduce>
