@@ -5,10 +5,15 @@ import useDraggable from "@/hooks/useDraggable";
 import LandingLaptop from "@/assets/Landing/laptop.svg";
 import { BluePostIt, YellowPostIt, YellowWithClipPostIt } from "@/assets";
 import { useRouter } from "next/router";
+import Storage from "@/storage";
 
 export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
   const router = useRouter();
+
+  const handleStart = () => {
+    router.push(Storage.getItem("token") ? "/space" : "/login");
+  };
 
   return (
     <>
@@ -21,7 +26,7 @@ export default function LandingApp() {
           </ImageWrapper>
         </CustomDraggableView>
 
-        <AppButton onClick={() => router.push("/login")}>START!</AppButton>
+        <AppButton onClick={handleStart}>START!</AppButton>
       </AppWrapper>
       <div>
         <CustomDraggableView defaultPosition={{ x: 100, y: -800 }}>
