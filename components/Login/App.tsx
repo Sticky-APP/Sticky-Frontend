@@ -8,9 +8,22 @@ import {
   YellowPostIt,
   YellowWithClipPostIt,
 } from "@/assets";
+import { useRouter } from "next/router";
+import axios from "axios";
 
 export default function LandingApp() {
   const { CustomDraggableView } = useDraggable();
+  const router = useRouter();
+
+  const handleGoogleLogin = () => {
+    axios
+      .get(
+        "http://192.168.10.88:8080/auth/google/oauth-uri?redirectUri=http://localhost:3000/oauth/callback/google",
+      )
+      .then((res) => {
+        router.push(res.data.oAuthUri);
+      });
+  };
 
   return (
     <>
@@ -20,7 +33,7 @@ export default function LandingApp() {
           <LoginDescription>
             새로운 디지털 세상, Sticky 시작하기
           </LoginDescription>
-          <LoginButton>
+          <LoginButton onClick={handleGoogleLogin}>
             <Image src={GoogleIcon} alt="" />
             Google로 로그인
           </LoginButton>
