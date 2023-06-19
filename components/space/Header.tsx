@@ -108,9 +108,9 @@ export default function Header() {
         </ImageContainer>
         <Line />
         <ItemContainer>
-          {testData[page].map((value: { id: number; src: StaticImageData }) => {
-            return <Item key={value.id} item={value.src} />;
-          })}
+          {testData[page].map((value: { id: number; src: StaticImageData }) => (
+            <Item key={value.id} item={value.src} />
+          ))}
         </ItemContainer>
       </HeaderContainer>
       <ButtonContainer>
@@ -154,12 +154,12 @@ const HeaderContainer = styled.header`
 `;
 
 const ImageContainer = styled(Link)`
-  z-index: 2;
   cursor: pointer;
   background: #ffffff;
   width: 130px;
   height: 80px;
   position: absolute;
+  z-index: 9999999999;
 `;
 
 const ItemContainer = styled.div`
