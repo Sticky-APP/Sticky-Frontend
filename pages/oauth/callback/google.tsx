@@ -21,9 +21,5 @@ export default function Google() {
     }
   }, [code, router]);
 
-  return (
-    <div>
-      <h1>Google</h1>
-    </div>
-  );
+  return <div />;
 }
