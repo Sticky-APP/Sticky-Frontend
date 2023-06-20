@@ -10,7 +10,7 @@ export default function Google() {
   useEffect(() => {
     if (code) {
       axios
-        .post("https://leehj050211.bssm.kro.kr//auth/google/token", {
+        .post("https://leehj050211.bssm.kro.kr/auth/google/token", {
           code,
           redirectUri: "https://leehj050211.bssm.kro.kr/oauth/callback/google",
         })

@@ -12,7 +12,7 @@ export default function Main() {
 
   useEffect(() => {
     axios
-      .get("https://leehj050211.bssm.kro.kr//user", {
+      .get("https://leehj050211.bssm.kro.kr/user", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
