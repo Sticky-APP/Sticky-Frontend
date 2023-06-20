@@ -28,7 +28,7 @@ export default function MyApp() {
       <IframeContainer>
         <IframeStyle
           sandbox="allow-scripts allow-popups"
-          src="http://localhost:3000/space"
+          src="https://leehj050211.bssm.kro.kr/space"
           title="my-space"
         />
         <FullScreenImageStyle href="/space">

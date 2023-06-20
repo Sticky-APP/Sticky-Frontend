@@ -18,7 +18,7 @@ export default function LandingApp() {
   const handleGoogleLogin = () => {
     axios
       .get(
-        "https://leehj050211.bssm.kro.kr//auth/google/oauth-uri?redirectUri=http://localhost:3000/oauth/callback/google",
+        "https://leehj050211.bssm.kro.kr//auth/google/oauth-uri?redirectUri=https://sticky-app.vercel.app/oauth/callback/google",
       )
       .then((res) => {
         router.push(res.data.oAuthUri);

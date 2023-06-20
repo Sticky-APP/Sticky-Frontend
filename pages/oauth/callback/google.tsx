@@ -12,7 +12,7 @@ export default function Google() {
       axios
         .post("https://leehj050211.bssm.kro.kr//auth/google/token", {
           code,
-          redirectUri: "http://localhost:3000/oauth/callback/google",
+          redirectUri: "https://leehj050211.bssm.kro.kr/oauth/callback/google",
         })
         .then((res) => {
           Storage.setItem("token", res.data.accessToken);
