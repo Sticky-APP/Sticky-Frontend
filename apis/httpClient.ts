@@ -60,7 +60,7 @@ export class HttpClient {
   }
 
   static setAccessToken() {
-    const accessToken = Storage.getItem("ACCESS_TOKEN");
+    const accessToken = Storage.getItem("token");
     HttpClient.clientConfig.headers = {
       ...HttpClient.clientConfig.headers,
       Token: accessToken || undefined,
@@ -68,7 +68,7 @@ export class HttpClient {
   }
 
   static removeAccessToken() {
-    Storage.setItem("ACCESS_TOKEN", "");
+    Storage.setItem("token", "");
   }
 
   private static setCommonInterceptors(instance: AxiosInstance) {

@@ -3,7 +3,7 @@ import { getDateParsedData } from "@/utils/date";
 import { AxiosRequestConfig, AxiosResponse } from "axios";
 
 export const requestInterceptors = (requestConfig: AxiosRequestConfig) => {
-  const accessToken = Storage.getItem("ACCESS_TOKEN");
+  const accessToken = Storage.getItem("token");
   if (requestConfig.headers) {
     (requestConfig.headers as any).Token = accessToken;
   }
