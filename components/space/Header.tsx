@@ -86,6 +86,7 @@ export default function Header() {
   const [page, setPage] = useState(0);
   const [front, setFront] = useState(false);
   const [back, setBack] = useState(false);
+  const isMySpace = true;
 
   useEffect(() => {
     if (page === testData.length - 1) {
@@ -99,6 +100,10 @@ export default function Header() {
       setFront(false);
     }
   }, [page]);
+
+  if (!isMySpace) {
+    return <div />;
+  }
 
   return (
     <>

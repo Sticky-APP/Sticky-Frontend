@@ -47,6 +47,7 @@ const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 `;
 
 const ImageWrapper = styled.div`
