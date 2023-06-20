@@ -18,7 +18,7 @@ export default function LandingApp() {
   const handleGoogleLogin = () => {
     axios
       .get(
-        "http://192.168.10.88:8080/auth/google/oauth-uri?redirectUri=http://localhost:3000/oauth/callback/google",
+        "https://leehj050211.bssm.kro.kr//auth/google/oauth-uri?redirectUri=http://localhost:3000/oauth/callback/google",
       )
       .then((res) => {
         router.push(res.data.oAuthUri);

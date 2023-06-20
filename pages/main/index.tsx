@@ -12,7 +12,7 @@ export default function Main() {
 
   useEffect(() => {
     axios
-      .get("http://192.168.10.88:8080/user", {
+      .get("https://leehj050211.bssm.kro.kr//user", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
